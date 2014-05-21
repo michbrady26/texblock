@@ -2,7 +2,7 @@
  * Author: Carlos Alvarez
  * URL: http://alvarez.is
  *
- * Project Name: SPOT - Free Bootstrap 3 Theme
+ * Project Name: TexBlock - 
  * Version: 1.0
  * URL: http://blacktie.co
  */
@@ -133,7 +133,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header-bg.jpg) no-repeat center top;
+	background: url(../img/background.jpg) no-repeat center top;
 	margin-top: -10px;
 	padding-top:20px;
 	text-align:center;

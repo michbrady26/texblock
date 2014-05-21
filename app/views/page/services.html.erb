@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>TexBlock- the app to help you stop texting and driving</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TexBl<i class="fa fa-play-circle"></i>ck</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/usershoutouts">USER SHOUTOUTS</a></li>
+            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+                    <% if user_signed_in? %>
+              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to "Sign Up", new_user_registration_path %></li>
+              <li><%= link_to "Sign In", new_user_session_path %></li>
+            <% end %> 
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>WE CAN DO A LOT OF THINGS</b></h4>
+				<p>JUST TAKE A LOOK & CONTACT US</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- blue wrap -->
+
+
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+			<div class="col-lg-4">
+				<i class="fa fa-automobile"></i>
+				<h4>MESSAGING BLOCK</h4>
+				<p>End your distractions while driving by eliminating the problem! Our text blocking software blocks incoming text messages until your car is no longer moving.</p>
+			</div><!-- col-lg-4 -->
+
+			<div class="col-lg-4">
+				<i class="fa fa-cogs"></i>
+				<h4>CALL BLOCKING</h4>
+				<p>We spend so much time talking on our phones and not focusing on the road.  This feature lets you block incoming phone calls but still have your emergency contacts go through.</p>
+			</div><!-- col-lg-4 -->
+
+			<div class="col-lg-4">
+				<i class="fa fa-eye"></i>
+				<h4>TRACKING</h4>
+				<p>See where you've been driving in your profile if you want!</p>
+			</div><!-- col-lg-4 -->
+		</div><!-- row -->
+		<br>
+		<div class="row centered">
+			<br><br>
+			<div class="col-lg-4">
+				<i class="fa fa-heart"></i>
+				<h4>AUTHENTICATION</h4>
+				<p>Each phone that is added to your profile has a unique verification code.  Type that code in to get started.  We won't let anyone block your apps without you knowing about it.</p>
+			</div><!-- col-lg-4 -->
+
+			<div class="col-lg-4">
+				<i class="fa fa-shopping-cart"></i>
+				<h4>VERIFIED DELETION</h4>
+				<p>If you are installing TexBlock for your child you probably don't want them deleting it right after.  We have a verification setting that alerts you before the app is deleted so you can either verify or deny!</p>
+			</div><!-- col-lg-4 -->
+
+			<div class="col-lg-4">
+				<i class="fa fa-cloud"></i>
+				<h4>EDUCATION</h4>
+				<p>We are doing our best to keep you informed on how the end texting and driving initiative is going.  Just keep checking in with our homepage to see the latest news on texting and driving.</p>
+			</div><!-- col-lg-4 -->
+		</div><!-- row -->
+	</div><!-- container -->
+
+
+	<!-- PRICING SECTION -->
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<h4>PRICING?</h4>
+				<br>
+				<div class="col-lg-4">
+                    <!-- START PRICING TABLE -->
+                    <div class="pricing-option">
+                        <div class="pricing-top">
+                            <span class="pricing-edition">Free Profile and App</span>
+                            <span class="price">
+                                <sup>$</sup>
+                                <span class="price-amount">0</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li>Up to<strong> 5 phones</strong> on one account</li>
+                            <li><strong>24/7</strong> Support</li>
+                            <li>Compatable with <strong>ios and android</strong> devices</li>
+                        </ul>
+                        <a href="index.html#" class="pricing-signup">Sign up</a>
+                    </div><!-- /pricing-option -->
+                    <!-- END PRICING TABLE -->
+				</div><!-- /col -->
+				
+				<div class="col-lg-4">
+                    <!-- START PRICING TABLE -->
+                    <div class="pricing-option">
+                        <div class="pricing-top">
+                            <span class="special-label">Add on <b>GPS sensor</b> Available!</span>
+                            <span class="pricing-edition">THE MOVEMENT SENSOR</span>
+                            <span class="price">
+                                <sup>$</sup>
+                                <span class="price-amount">15</span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li><strong>Tracking capabilities</strong></li>
+                            <li><strong>Use in any car</strong></li>
+                            <li><strong>1-year free replacement</strong></li>
+                        </ul>
+                    </div><!-- /pricing-option -->
+                    <!-- END PRICING TABLE -->
+				</div><!-- /col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- DG -->
+
+
+	
+	<div id="r">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+		          <h4>WE HAVE THE CAPACITY TO SAVE LIVES BY REDUCING THE NUMBER OF DISTRACTED DRIVERS</h4>
+		          <p>TexBlock is a phone application that communicates with a signal (either GPS or a secondary device) and automatically shuts down user-selected applications.  This app allows users to take control by identifying what applications pose a threatening distraction to them while in their car.  This app is a mechanism to help reduce the number of distracted drivers on the road and decrease the number of injuries and deaths directly related to distracted driving.</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><! -- r wrap -->
+	
+	
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<a href="#"><i class="fa fa-android"></i></a><a href="#"><i class="fa fa-phone"></i></a><a href="#"><i class="fa fa-apple"></i></a>
+		
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+
+<!-- MODAL FOR CONTACT -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">contact us</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row centered">
+              <p>We are available 24/7, so don't hesitate to contact us with questions.</p>
+              <p>
+            Bates College<br/>
+            2 Andrews Rd<br/>
+            Lewiston, ME 04240<br/>
+            mbrady4@bates.edu
+              </p>
+              <div id="mapwrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.9222621237614!2d-70.20318600000003!3d44.10559600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb26b95e156aed5%3A0xe09394fc40abee2!2sBates+College!5e0!3m2!1sen!2sus!4v1400625080357" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>  
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,25 +1,252 @@
-<h1>What is TexBlock?</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-<p>TexBlock is a phone application that communicates with a signal (either GPS or a secondary device) and automatically shuts down user-selected applications.  This app allows users to take control by identifying what applications pose a threatening distraction to them while in their car.  This app is a mechanism to help reduce the number of distracted drivers on the road and decrease the number of injuries and deaths directly related to distracted driving.</p>
+    <title>TexBlock- the app to help you stop texting and driving</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
 
-<h1>Why is TexBlock important?</h1>
-<p>In 2011, 23% of all car crashes were reported as cell phone related.  That’s 1.3 million crashes; and that’s only the number that was accurately reported.  Smart phones have a number of applications that often seem to demand our attention while driving—maps, music, messaging, images, internet.</p>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<p>According to the US Department of Transportation, “Young drivers report the highest level of phone involvement in crash or near-crash incidences.”  Even if the driver isn’t hurt, their distraction can have severe legal consequences if the other party is injured or damage is inflicted.</p>  
+  <body>
 
-<p>“A quarter of teens respond to a text message once or more every time they drive. 20 percent of teens and 10 percent of parents admit that they have extended, multi-message text conversations while driving.” Official US Government Website for Distracted Driving, Distraction.Gov.  In the United States alone, 90% of adults have a cell phone and 58% of those users have a Smartphone.  Within this user pool, 67% of cell owners reportedly check their phones for messages, alerts, or calls—even if their phone isn’t ringing.  By 2012, over 17.3 billion text messages were sent by these users every month.</p>  
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TexBl<i class="fa fa-play-circle"></i>ck</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/usershoutouts">USER SHOUTOUTS</a></li>
+            <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
+                    <% if user_signed_in? %>
+              <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to "Sign Up", new_user_registration_path %></li>
+              <li><%= link_to "Sign In", new_user_session_path %></li>
+            <% end %> 
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
-<p>In order to limit the number of users whose texting results in fatal crashes, the number of people operating their phones while driving needs to be reduced.</p>  
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>LEARN MORE ABOUT US</h4>
+				<p>WE ARE COOL PEOPLE</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
 
 
-<h1>Fixing the Problem</h1>
-<p>Users go onto TexBlock.com and set up a profile.  Each profile begins with a name, email, password, and cell phone number. The user is then prompted for a verification code, which has been sent to the number you provided via text message.  Once the user’s number is verified they enter the website.  The profile allows for multiple cell phones, with one being set as the primary user/installer; each cell phone must be verified prior to use of TexBlock.  Each profile allows users to pair their phone with one or more cars or device IDs.</p>
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic.jpg" width="110" height="110" alt="">
+				<h4>Frank Lampard</h4>
+				<p>He does some stuff.</p>
+				<p><a href="#">@Frank_BlackTie</a></p>
+			</div><!-- col-lg-3 -->
 
-<p>The user then plugs their phones into their computer.  The online interface identifies all of the apps on the phone and allows users to pick which applications to block on their phone.</p>
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic2.jpg" width="110" height="110" alt="">
+				<h4>David Wright</h4>
+				<p>He handles other stuff.</p>
+				<p><a href="#">@David_BlackTie</a></p>
+			</div><!-- col-lg-3 -->
 
-<p>When the phone is in a car in motion it automatically locks down the pre-selected applications and does not re-open them until the car has stopped.  TexBlock communicates directly with the GPS in cars; for earlier model cars without GPS, there is a secondary device available for purchase.  This devise can be installed in the car and signals to the phone when the car is and is not in motion.</p> 
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic3.jpg" width="110" height="110" alt="">
+				<h4>Mark Milestone</h4>
+				<p>He does more stuff.</p>
+				<p><a href="#">@Mark_BlackTie</a></p>
+			</div><!-- col-lg-3 -->
 
-<p>If calling is chosen as a blocked app, the web app will prompt the installer to select a set number of “emergency” contacts whose calls will go through regardless (this included 911).  This feature is useful for new drivers who may need to stay in contact with a parent or for adults who need to take a work call or maintain contact with their children.</p>  
+			<div class="col-lg-3">
+				<img class="img-circle" src="assets/img/pic4.jpg" width="110" height="110" alt="">
+				<h4>Tania Tissen</h4>
+				<p>She sometimes does stuff.</p>
+				<p><a href="#">@Tania_BlackTie</a></p>
+			</div><!-- col-lg-3 -->
 
-<p>If a guardian is installing the app on a dependent’s mobile device, the app has an added security design that prevents its deletion without authorization.  If this security feature is turned on and the user tries to delete TexBlock, the installer will be contacted by either email or phone (depending on preference).  The app can then be deleted following the authorization of the person who installed TexBlock.</p>  
+		</div><!-- row -->
+		<br>
+		<br>
+	</div><!-- container -->
+
+
+	<!-- PORTFOLIO SECTION -->
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<h4>OUR SKILLS</h4>
+				<br>
+				
+			<!-- First Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 70,
+								color:"#3498db"
+							},
+							{
+								value : 30,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Why use TexBlock?</b></p>
+				<p><small>In 2011, 23% of all car crashes were reported as cell phone related.  That’s 1.3 million crashes; and that’s only the number that was accurately reported.  Smart phones have a number of applications that often seem to demand our attention while driving—maps, music, messaging, images, internet.</small></p>
+				<p><small>According to the US Department of Transportation, “Young drivers report the highest level of phone involvement in crash or near-crash incidences.”  Even if the driver isn’t hurt, their distraction can have severe legal consequences if the other party is injured or damage is inflicted.</small></p>  
+				<p><small>“A quarter of teens respond to a text message once or more every time they drive. 20 percent of teens and 10 percent of parents admit that they have extended, multi-message text conversations while driving.” Official US Government Website for Distracted Driving, Distraction.Gov.  In the United States alone, 90% of adults have a cell phone and 58% of those users have a Smartphone.  Within this user pool, 67% of cell owners reportedly check their phones for messages, alerts, or calls—even if their phone isn’t ringing.  By 2012, over 17.3 billion text messages were sent by these users every month.</small></p>  
+				<p><small>In order to limit the number of users whose texting results in fatal crashes, the number of people operating their phones while driving needs to be reduced.</small></p>
+			</div><!-- /col-lg-3 -->
+
+			<!-- Second Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas2" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 90,
+								color:"#3498db"
+							},
+							{
+								value : 10,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>How important is it?</b></p>
+				<p><small>In 2011, 23% of all car crashes were reported as cell phone related.  That’s 1.3 million crashes; and that’s only the number that was accurately reported.  Smart phones have a number of applications that often seem to demand our attention while driving—maps, music, messaging, images, internet.</small></p>
+				<p><small>According to the US Department of Transportation, “Young drivers report the highest level of phone involvement in crash or near-crash incidences.”  Even if the driver isn’t hurt, their distraction can have severe legal consequences if the other party is injured or damage is inflicted.</small></p>  
+				<p><small>“A quarter of teens respond to a text message once or more every time they drive. 20 percent of teens and 10 percent of parents admit that they have extended, multi-message text conversations while driving.” Official US Government Website for Distracted Driving, Distraction.Gov.  In the United States alone, 90% of adults have a cell phone and 58% of those users have a Smartphone.  Within this user pool, 67% of cell owners reportedly check their phones for messages, alerts, or calls—even if their phone isn’t ringing.  By 2012, over 17.3 billion text messages were sent by these users every month.</small></p>  
+				<p><small>In order to limit the number of users whose texting results in fatal crashes, the number of people operating their phones while driving needs to be reduced.</small></p>  
+			</div><!-- /col-lg-3 -->
+			
+			<!-- Third Chart -->
+			<div class="col-lg-3">
+				<canvas id="canvas3" height="130" width="130"></canvas>
+				<br>
+				<script>
+					var doughnutData = [
+							{
+								value: 50,
+								color:"#3498db"
+							},
+							{
+								value : 50,
+								color : "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+				</script>
+				<p><b>Fixing the Problem</b></p>
+				<p><small>Users go onto TexBlock.com and set up a profile.  Each profile begins with a name, email, password, and cell phone number. The user is then prompted for a verification code, which has been sent to the number you provided via text message.  Once the user’s number is verified they enter the website.  The profile allows for multiple cell phones, with one being set as the primary user/installer; each cell phone must be verified prior to use of TexBlock.  Each profile allows users to pair their phone with one or more cars or device IDs.</small></p>
+				<p><small>The user then plugs their phones into their computer.  The online interface identifies all of the apps on the phone and allows users to pick which applications to block on their phone.</small></p>
+				<p><small>When the phone is in a car in motion it automatically locks down the pre-selected applications and does not re-open them until the car has stopped.  TexBlock communicates directly with the GPS in cars; for earlier model cars without GPS, there is a secondary device available for purchase.  This devise can be installed in the car and signals to the phone when the car is and is not in motion.</small></p> 
+				<p><small>If calling is chosen as a blocked app, the web app will prompt the installer to select a set number of “emergency” contacts whose calls will go through regardless (this included 911).  This feature is useful for new drivers who may need to stay in contact with a parent or for adults who need to take a work call or maintain contact with their children.</small></p>  
+				<p><small>If a guardian is installing the app on a dependent’s mobile device, the app has an added security design that prevents its deletion without authorization.  If this security feature is turned on and the user tries to delete TexBlock, the installer will be contacted by either email or phone (depending on preference).  The app can then be deleted following the authorization of the person who installed TexBlock.</small></p>  
+			</div><!-- /col-lg-3 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- DG -->
+
+
+
+	
+	<div id="r">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+		          <h4>WE HAVE THE CAPACITY TO SAVE LIVES BY REDUCING THE NUMBER OF DISTRACTED DRIVERS</h4>
+		          <p>TexBlock is a phone application that communicates with a signal (either GPS or a secondary device) and automatically shuts down user-selected applications.  This app allows users to take control by identifying what applications pose a threatening distraction to them while in their car.  This app is a mechanism to help reduce the number of distracted drivers on the road and decrease the number of injuries and deaths directly related to distracted driving.</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><! -- r wrap -->
+	
+	
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<a href="#"><i class="fa fa-android"></i></a><a href="#"><i class="fa fa-phone"></i></a><a href="#"><i class="fa fa-apple"></i></a>
+		
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+  <!-- MODAL FOR CONTACT -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">contact us</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row centered">
+              <p>We are available 24/7, so don't hesitate to contact us with questions.</p>
+              <p>
+            Bates College<br/>
+            2 Andrews Rd<br/>
+            Lewiston, ME 04240<br/>
+            mbrady4@bates.edu
+              </p>
+              <div id="mapwrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.9222621237614!2d-70.20318600000003!3d44.10559600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb26b95e156aed5%3A0xe09394fc40abee2!2sBates+College!5e0!3m2!1sen!2sus!4v1400625080357" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>  
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

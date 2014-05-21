@@ -4,4 +4,10 @@ class PageController < ApplicationController
 
   def about
   end
+
+  def services
+  end
+
+  def usershoutouts
+  end
 end
